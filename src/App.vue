@@ -10,7 +10,7 @@ import HeaderCompo from "../src/components/HeaderCompo.vue"
 
 export default {
 
-  
+
   name: 'App',
   components: { FooterCompo,
     HeaderCompo
