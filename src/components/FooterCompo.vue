@@ -9,7 +9,7 @@
     //import { defineComponent } from '@vue/composition-api'
     
     export default {
-        name:'Footer'
+        name:'FooterCompo'
         }
     </script>
     <style>

@@ -8,7 +8,7 @@
 //import { defineComponent } from '@vue/composition-api'
 
 export default {
-    name:'Header'
+    name:'HeaderCompo'
     }
 </script>
 <style>
