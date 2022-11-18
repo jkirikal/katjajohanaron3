@@ -17,10 +17,10 @@
     </div>
     <div class="postFooter">
         <span class="likeButton">
-            <button v-on:click="IncreaseLike(post.id)"> Like </button>
+            <button id=likeId v-on:click="IncreaseLike(post.id)"><img id="likeimg" src="../../media/like.png"/></button>
         </span>
         <span class="likes">
-            <p>{{post.likecount}}</p>
+            <p>{{post.likecount}} likes</p>
         </span>
     </div>
 </li>
@@ -50,20 +50,57 @@ IncreaseLike: function(id) {
     .posterPhoto img{
         height:30px;
         width:30px;
+        border-radius:10px;
     }
     .photo img{
-        height:450px;
-        width:600px;
+        height:400px;
+        width:100%;
     }
     ul {
     list-style-type: none;
-    width:600px;
+    width:80%;
     }
     .post{
         display:flex;
         flex-direction:column;
-        width:600px;
-        border: 1px solid #1E5128;
+        border: 5px solid rgb(97, 183, 155);
+        border-radius:20px;
+        background-color: rgb(73, 79, 76);
+        color:white;
+    }
+    .postDate{
+        margin-top:8px;
+    }
+    li {
+        margin:10px;
+    }
+    .posterInfo{
+        padding:10px;
+        display:flex;
+        justify-content:space-between;
+    }
+    .postFooter{
+        display:flex;
+        justify-content:space-between;
+        margin:10px;
+        margin-right:20px;
+    }
+    .likes{
+        margin-top:10px;
+    }
+    #likeimg{
+        height:40px;
+        width:40px;
+    }
+    #likeId{
+        border:0;
+        padding:10px;
+        border-radius:20px;
+        background-color: rgb(78, 84, 81);
+    }
+    #likeId:hover{
+        background-color: rgb(97, 183, 155);
+        transition: 0.3s;
     }
 
 </style>
