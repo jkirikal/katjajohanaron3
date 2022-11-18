@@ -1,7 +1,7 @@
 <template>
 <div class="nav">
-    <a href="#">Home</a>
-    <a href="#">Sign up</a>
+    <router-link to="/main">Home</router-link>
+    <router-link to="/signup">Sign up</router-link>
 </div>
 </template>
 <script>
@@ -11,22 +11,34 @@ export default {
     name:'HeaderCompo'
     }
 </script>
-<style>
+<style scoped>
 .nav{
-    background-color: rgb(5, 83, 36);
+    background-color: rgb(73, 79, 76);
     overflow:hidden;
+    border-style: double;
+    border: 5px solid rgb(130, 184, 162);
+    border-radius: 25px;
+    height:60px;
 }
+
 .nav a{
-    float:left;
-    color:rgb(222, 222, 242);
+    /*float:center;*/
+    color:rgb(242, 242, 248);
     padding:14px 16px;
     text-align:center;
-    font-size: 17 px;
+    font-size: 1.1rem;
     text-decoration:none;
     margin-right:5px;
-    height:50px;
+    height:30px;
+    display: inline-block;
+    margin-top: 1px;
+
 }
+
 .nav a:hover{
     background-color: rgb(97, 183, 155);
+    border-radius: 10px;
+    
 }
+
 </style>
