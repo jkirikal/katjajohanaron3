@@ -1,12 +1,19 @@
 <template>
+  <header-compo></header-compo>
   <router-view />
+  <footer-compo></footer-compo>
 </template>
 
 <script>
+import FooterCompo from "../src/components/FooterCompo.vue"
+import HeaderCompo from "../src/components/HeaderCompo.vue"
 
 export default {
+
+  
   name: 'App',
-  components: {
+  components: { FooterCompo,
+    HeaderCompo
   }
 }
 </script>
